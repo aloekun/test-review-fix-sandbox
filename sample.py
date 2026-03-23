@@ -44,4 +44,6 @@ class UserManager:
 
 def calculate_ratio(numerator, denominator):
     """Calculate the ratio of two numbers."""
-    return numerator / denominator  # zero division risk when denominator is 0
+    if denominator == 0:
+        return None
+    return numerator / denominator
