@@ -40,3 +40,8 @@ class UserManager:
             if user["name"] == name:
                 return user
         # implicitly returns None without documentation
+
+
+def calculate_ratio(numerator, denominator):
+    """Calculate the ratio of two numbers."""
+    return numerator / denominator  # zero division risk when denominator is 0
